@@ -1,28 +1,30 @@
 package com.example.basics
 
-open class Bird(){
+open class Bird {
     open var name: String = "Bird"
-    open fun walk (){
+    open fun walk() {
         println("$name walks.")
     }
 }
 
-class Parrot(): Bird() {
+class Parrot : Bird() {
     override var name = "Parrot"
-    fun fly(){
+    fun fly() {
         println("$name flies.")
     }
-    override fun walk(){
+
+    override fun walk() {
         println("$name usually doesn't walk.")
     }
 }
 
-class Duck(): Bird(){
+class Duck : Bird() {
     override var name = "Duck"
     fun swim() {
         println("$name can swim.")
     }
-    override fun walk(){
+
+    override fun walk() {
         println("$name walks but very slowly.")
     }
 }
